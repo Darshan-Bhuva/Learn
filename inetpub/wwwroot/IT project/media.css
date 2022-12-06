@@ -1,0 +1,138 @@
+@media (max-width:1229px) and (min-width:768px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      
+      #home {
+        height: 100vh;
+        /* width: 100vw; */
+        background-image: url("./images/background.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      
+      .welcome_home {
+        position: relative;
+        top: 120px;
+        left: 200px;
+        display: inline-block;
+      
+      }
+      
+      #wtm {
+        color: rgb(33, 122, 247);
+        font-weight: 600;
+        letter-spacing: 2px;
+        display: inline-block;
+      }
+      
+      #homeh1 {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 1;
+        display: inline-block;
+      }
+      
+      #homep {
+        display: inline-block;
+        width: 510px;
+        color: rgb(0 0 0 / 50%);
+        line-height: 1.8;
+      }
+      
+      #homebtn {
+        color: white;
+        background-color: #207dff;
+        text-decoration: none;
+        /* cursor: pointer; */
+        padding: 16px 24px;
+        border-radius: 30px;
+      }
+      
+      .header {
+        background-color: #207dff;
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .main_nav {
+        display: flex;
+        justify-content: space-around;
+        /* border:px solid black; */
+        padding: 28px 0px;
+        position: sticky;
+        z-index: 3;
+        top: 0px;
+        background-color: white;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+      }
+      
+      .web_name {
+        font-size: 24px;
+        font-weight: 900;
+      }
+      
+      .navigation {
+        margin-top: 7px;
+      }
+      
+      .navigation a {
+        padding: 0px 12.2px;
+        text-decoration: none;
+        color: black;
+        border-bottom: #207dff;
+      }
+      
+      .navigation #home .active {
+        padding: 0px 12.2px;
+        text-decoration: none;
+        color: black;
+        border-bottom: #207dff;
+      }
+      
+      .navigation a:hover {
+        border-bottom: 3px solid #207dff;
+        transition-duration: 0.3s;
+      }
+      
+      
+      #apoint {
+        padding: 10px;
+        background: red;
+        color: white;
+        border-radius: 4px;
+        opacity: 0.7;
+      }
+      
+      #apoint:hover {
+        transition-duration: 0.3s;
+        background: #207dff;
+        color: white;
+        border: none;
+        opacity: 1;
+      }
+      
+      button {
+        background: transparent;
+        border: none;
+        letter-spacing: 1px;
+        color: white;
+      }
+      
+      .header_span {
+        color: white;
+      }
+      
+      #b1 {
+        border-right: 1.7px solid #4d97ff;
+        padding-right: 5px;
+      }
+}

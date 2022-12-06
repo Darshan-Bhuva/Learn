@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <%
+            response.write(9\2)
+            response.write("<br>")
+            response.write(9/2)
+        %>
+    </body>
+</html>
