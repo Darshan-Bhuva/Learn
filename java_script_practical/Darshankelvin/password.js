@@ -7,19 +7,18 @@ let word = "kelvin";
 
 if (password == word) {
   console.log(`You Enter Correct Password : ${word}`);
-}
-else if (password != null) {
+} else if (password != null) {
   while (password != word) {
-    let password = prompt("Enter Correct Password");
+    let passwords = prompt("Enter Correct Password");
 
-    if (password == null) {
+    if (passwords == null) {
       console.log("You Pressed Cancel Button");
       break;
+    } 
+    else if (passwords == word) {
+      console.log(`You Enter Correct Password : ${word}`);
+      break;
     }
-    //  else if (password == word) {
-    //   console.log(`You Enter Correct Password : ${word}`);
-    // break;
-    // }
   }
 }
 
