@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch_case in js</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        1.addition <br>
+        2.substraction <br>
+        3.multiplication <br>
+        4.division
+    </div>
+</body>
+<script>
+    {
+        let user = Number(prompt());
+
+        // 1.summition
+        // 2.substraction
+        // 3.multiplication
+        // 4.division
+
+        switch (user) {
+            case 1:
+                console.log(`you choose addition`);
+                break;
+            case 2:
+                console.log(`you choose substraction`);
+                break;
+            case 3:
+                console.log(`you choose multiplication`);
+                break;
+            case 4:
+                console.log(`you choose division`);
+                break;
+            default:
+                console.log(`invalid input`);
+                break;
+        }
+        // --------------------------------------------------------------------
+        if (user == 1 || user == 2) {
+            console.log(`you choose addition1`);
+        }
+        else if (user == 2) {
+            console.log(`you choose substraction2`);
+        }
+        else if (user == 3) {
+            console.log(`you choose multiplication3`);
+        }
+        else if (user == 4) {
+            console.log(`you choose division4`);
+        }
+        else {
+            console.log(`invalid input0`);
+        }
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,80 @@
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Events In Javascript</title>
+        </head>
+
+        <body>
+            <button class="this" onclick="oncli()">onclick</button>
+            <button class="this" onmouseenter="onenter()">onmouseenter</button>
+            <button class="this" onmouseleave="onleave()">onmouseleave</button>
+            <button class="this" onmouseup="onup()">onmouseup</button>
+            <button class="this" onmousedown="ondown()">onmousedown</button>
+            <button class="this" onkeypress="onkpress()">onkeypress</button>
+            <button class="this" onkeyup="onkup()">onkeyup</button>
+            <button class="this" onkeydown="onkdown()">onkeydown</button>
+            <button class="this" ondblclick="ondblclk()">ondblclick</button>
+        </body>
+        <script>
+
+            function btnhide1() {
+                for (let i = 0; i <= 8; i++) {
+                    if (i == j) {
+                        continue;
+                    }
+                    document.querySelectorAll(".this")[i].setAttribute("style", "display:none;");
+                }
+            }
+            function oncli() {
+                document.body.style.backgroundColor = "red";
+                j = 0;
+                btnhide1();
+            }
+            function onenter() {
+                document.body.style.backgroundColor = "red";
+                j = 1;
+                btnhide1();
+            }
+            function onleave() {
+                document.body.style.backgroundColor = "red";
+                j = 2;
+                btnhide1();
+            }
+            function onup() {
+                document.body.style.backgroundColor = "red";
+                j = 3;
+                btnhide1();
+            }
+            function ondown() {
+                document.body.style.backgroundColor = "red";
+                j = 4;
+                btnhide1();
+            }
+            function onkpress() {
+                document.body.style.backgroundColor = "red";
+                j = 5;
+                btnhide1();
+            }
+            function onkup() {
+                document.body.style.backgroundColor = "red";
+                j = 6;
+                btnhide1();
+            }
+            function onkdown() {
+                document.body.style.backgroundColor = "red";
+                j = 7;
+                btnhide1();
+            }
+            function ondblclk() {
+                document.body.style.backgroundColor = "red";
+                j = 8;
+                btnhide1();
+            }
+
+        </script>
+
+        </html>

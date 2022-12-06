@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="clearTimeout(dd)">
+        Click me
+    </button>
+</body>
+<script>
+    {
+        // var d = setTimeout(ok, 3000);
+        function ok() {
+            alert(`Sorry for 3 second delay !`)
+        }
+    }
+    {
+        var dd = setTimeout(ok, 3000);
+        console.log(dd)
+    }
+</script>
+
+</html>

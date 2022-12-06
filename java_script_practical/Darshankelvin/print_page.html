@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page_print</title>
+
+</head>
+
+<body>
+    <div id="div1">
+        Div one content is here.
+        <button onclick="myfun('div1')">divone</button>
+    </div>
+    <div id="div2">
+        Div two content is here.
+        <button onclick="myfun('div2')">divtwo</button>
+    </div>
+    <div id="div3">
+        Div three content is here.
+        <button onclick="myfun('div3')">divthree</button>
+    </div>
+    <button onclick="mywholepage()">wholepage</button>
+
+</body>
+<script>
+    // function mywholepage() {
+    //     window.print();  //It will return all page content.(document.body.innerhtml)
+    // }
+
+    // function myfun(paras) {   //div 1 click ==>  paras = div1
+    //     var backup = document.body.innerHTML;
+    //     var print = document.getElementById(paras).innerHTML;
+    //     document.body.innerHTML = print;
+    //     window.print()
+    //     document.body.innerHTML = backup;
+    // }
+
+    // let are = [1, 2, 3, 4]
+
+
+    // let my = () => {
+
+    //     let enter;
+    //     for(let n in are){
+    //         for (let a of are) 
+    //         {   
+    //             console.log(a);
+    //             enter = prompt()
+    //             if (a == enter) {
+    //                 console.log("same");
+    //             }else{
+    //                 console.log("welcome");
+    //             }
+    //         }
+    //     }
+
+    // }
+
+    // my();
+    let are = new Array();
+let pro = prompt();
+
+for(let i = 0; i<=pro; i++){
+    are[i] = i;
+    // console.log(typeof are);
+  console.log(are[i]);
+}
+</script>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All consoles of js</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 300vh;
+        }
+
+        .cover_whole_plain {
+            position: sticky;
+            top: 0px;
+            border: 2px solid red;
+            height: 100vh;
+            width: 100wh;
+        }
+
+        .fan {
+            transition: 2s;
+            display: inline-block;
+            animation: darshan 0.2s infinite;
+            position: absolute;
+            top: 48px;
+            left: 38px;
+        }
+
+        .whole_plain {
+            animation: whole_plain 80s infinite;
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .box{
+            position: absolute;
+            top: 175px;
+            left: 83px;
+            animation: box 80s infinite;
+        }
+
+        @keyframes darshan {
+            0% {
+                rotate: 0deg 0 0 1;
+            }
+
+            50% {
+                rotate: 180deg 0 0 1;
+
+            }
+
+            100% {
+                rotate: 360deg 0 0 1;
+
+            }
+        }
+
+        @keyframes whole_plain {
+            0% {
+                right: 0px;
+                top: 0px;
+            }
+            100% {
+                top: 902px;
+                right: 1610px;
+            }
+        }
+
+        @keyframes box {
+            0% {
+                rotate: 50deg 0 0 1;
+            }
+            100% {
+               
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="cover_whole_plain">
+                <div class="whole_plain">
+                    <div class="fan">
+                        <img src="./fan.png" alt="">
+                    </div>
+                    <div class="plain">
+                        <img src="./plain.png" alt="">
+                    </div>
+                    <div class="box">
+                        <img src="./box.png" alt="">
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- <script> -->
+<!-- // console.assert();
+    // console.clear();
+    // console.count();
+    // console.countReset();
+    // console.debug();
+    // console.dir();
+    // console.error();
+    // console.group();
+    // console.groupCollapsed();
+    // console.groupEnd();
+    // console.info();
+    // console.log();
+    // console.table();
+    // console.time();
+    // console.timeEnd();
+    // console.timeLog();
+    // console.timeStamp();
+    // console.trace();
+    // console.warn(); -->
+<!-- </script> -->

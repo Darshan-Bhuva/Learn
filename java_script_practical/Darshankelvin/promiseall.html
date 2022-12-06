@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>promise all methode in js</h1>
+</body>
+
+<script>
+
+    // function prom() {
+    //    return new Promise(function (resolve, reject) {
+
+    //         console.log("its done");
+    //         resolve("darshan");
+    //     });
+    // }
+
+    // prom().then((result) => {
+
+    //     console.log(result)
+    // }).catch((error) => {
+
+    //     console.log(error)
+    // })
+
+
+    let my = function () {
+        return function (resolve,reject) {
+            console.log("done");
+            resolve("prosses done");
+        }
+    }
+
+    let one = new Promise(my("ok", "not"));
+    let two = new Promise(my("ok", "not"));
+    let three = new Promise(my("ok", "not"));
+
+    Promise.all([one, two, three]).then((result) => {
+        console.log(result);
+    }).catch((error) => {
+
+        console.log(error);
+    })
+</script>
+
+</html>

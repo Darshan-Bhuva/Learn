@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // Date function Bydefault format = Month(word)  Day(number)  year(number)  Ex. :- May 07 2022
+    // Alwaye Month Index start with 0
+
+    {
+        let date = new Date();
+        document.write("DEFAULT : ")
+        document.write(date);
+        
+        document.write("<br>");
+        document.write("<br>");
+
+        let date1 = new Date(2019 , 11 , 5);
+        document.write("PASS DATE : ");
+        document.write(date1);
+
+        document.write("<br>");
+        document.write("<br>");
+
+    //Maintain passing order in date function (yyyy , mm , dd)   IF any value is not pass then bydefault it consider as first(month or date)
+    // If you pass only one value in function than it will return always starting time
+        let date2 = new Date(2019);
+        document.write("PASS DATE ONLY YEAR: ");
+        document.write(date2);;
+
+    //UTC = Universal Cordinated Time  
+
+        let date3 = new Date();
+        let month = date3.getUTCMonth() + 1;
+        let dat = date3.getUTCDate();
+        // let day = date3.getUTCDay();
+        let year = date3.getUTCFullYear();
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write(year + " / " + month + " / " + dat  );
+
+    // Short trick
+        document.write("<br>");
+        let date4 = new Date().getUTCMonth();
+        document.write(date4);
+
+    //Set date
+        document.write("<br>");
+        let date5 = new Date()
+        date5.setMonth(2);
+        date5.setDate(2);
+        date5.setFullYear(2011 , 11 , 2);
+        document.write("Seted Date");
+        document.write(date5);
+    }
+</script>
+</html>

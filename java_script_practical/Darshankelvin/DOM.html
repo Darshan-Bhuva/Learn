@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <p id="h">helloo</p>
+    <p id="darshan">
+
+        <!-- ----------------------------------------------------use innerHTML-------------------------------------------------------->
+        <button type="button" onclick="document.getElementById('darshan').innerHTML='meet my first javascript'">text
+            change</button>
+
+        <!-- ----------------------------------------------------use style-------------------------------------------------------->
+        <button type="button" onclick="document.getElementById('darshan').style.color='red'">color change</button>
+
+        <!-- ----------------------------------------------------use bckground color-------------------------------------------------------->
+        <button type="button" onclick="document.getElementById('darshan').style.backgroundColor='blue'">background-color
+            change</button>
+        <button onclick="change()">
+            <span>click</span>
+        </button>
+    <p id="darshan1">Hello</p>
+
+    <p class="inn">hello 0</div>
+    <p class="inn">hello 1</div>
+    <p class="inn">hello 2</div>
+
+    <ul>
+        <li>like</li>
+        <li>share</li>
+        <li>Subs</li>
+    </ul>
+
+    <P id="paraa1">para1</P>
+    <P id="paraa2">para2</P>
+    <P id="paraa3">para3</P>
+    <P id="paraa4">para4</P>
+    <p id="patiya"></p>
+
+    <button onclick="Youtube()"> You tube </button>
+
+    <p>Hello World!</p>
+
+    <p>Hello Norway!</p>
+
+    <p id="demo"></p>
+
+</body>
+
+<script>
+    function change() {
+        let a = document.getElementById("darshan1").innerHTML = "darshan";
+        // let b = document.getElementById("darshan1").style.color = "blue";
+        // let c = document.getElementById("darshan1").style.backgroundColor = "red";
+        // let d = document.getElementById("darshan1").style.display = "inline-block"
+        // let e = document.getElementById("darshan1").style.borderRadius = "35px"
+        // let f = document.getElementById("darshan1").style.padding = "5px"
+        // let g = document.getElementById("darshan1").style.bac = "blue"
+        let main = document.getElementById("darshan1").setAttribute("style", "color:red; background-color:blue; display:inline-block; border-radius:35px; padding:5px;");
+    }
+
+    {
+        let b = document.getElementsByClassName("inn")[2].innerHTML;
+        console.log(typeof b);
+        for (let i = 1; i <= 10; i++) {
+            console.log(b);
+        }
+    }
+
+    {
+        let child = document.body.children
+        console.log(child.firstChild);
+    }
+
+
+    {
+        //--------------------------create element and append node
+        let para = document.createElement("p");
+        let paradet = document.createTextNode("this is a para");
+        para.appendChild(paradet);
+        console.log(para);
+        document.body.appendChild(para)
+        document.write("<p>heloooooo</p>");
+    }
+
+    {
+        // -----------------------Declare element's first and last child
+        let text = document.querySelector("ul");
+        console.log(text);
+        console.log(text.lastChild);
+        console.log(text.parentNode);
+    }
+
+    {
+        // ----------------------------Use on id for declare siblings
+        let sib = paraa1.nextElementSibling.nextElementSibling;
+        console.log(sib);
+    }
+
+    {
+        function Youtube() {
+            window.location = "https://www.youtube.com/"
+            window.location.assign("https://www.youtube.com/")
+        }
+    }
+    // {
+    //     let fun = you();
+    //     function you() {
+    //         let pfun = prompt();
+    //         document.getElementById("patiya").innerHTML = pfun;
+    //         document.getElementById("patiya").setAttribute("style", "color:red;");
+
+    //     }
+    //     // document.write(fun);
+    // }
+    {
+        let a = kel()
+        function kel() {
+            let b = "kelvin";
+            let c = "kelvinkelvin";
+            // return b + c;
+        }
+        console.log(a);
+    }
+
+</script>
+
+</html>

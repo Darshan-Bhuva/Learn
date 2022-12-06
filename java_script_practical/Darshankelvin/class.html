@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    class my {
+        constructor(a, b, c) {
+            this.name = a;
+            this.age = b;
+            this.about = c;
+            this.info = "this is string in oop"
+
+        }
+        logical(pass) {
+            return `my name is ${this.name} and my age is ${this.age} and we also pass parameter or argument = ${pass}`;
+        }
+    }
+    let mine = new my("user", 20, "progerammer");
+    // let mine2 = new my("user2", 220, "programmer");
+    console.log(mine);
+    // console.log("-------------------------------------------------------------------------------------------------------------------------");
+    console.log(mine.__proto__)
+    // console.log("-------------------------------------------------------------------------------------------------------------------------")
+    console.log(my.prototype);
+    // console.log("-------------------------------------------------------------------------------------------------------------------------")
+    console.log(mine.logical(10));
+    // console.log("-------------------------------------------------------------------------------------------------------------------------")
+    my.prototype.add = function () {
+        return `this prototype added with outside class and we also use parameter and argument ${this.info} `
+    }
+    // console.log("-------------------------------------------------------------------------------------------------------------------------")
+    console.log(mine.add())
+</script>
+1-------------------------------------------------------------------------------------------------
+let ok = function(){
+
+}
+ok()
+
+2--------------------------------------------------------------------------------------------------
+
+function ok(){
+
+}
+ok()
+
+3--------------------------------------------------------------------------------------------------
+
+let obg = {
+    name:"darshan",
+    age:18,
+
+    function one(){
+
+    }
+
+    two:function(){
+
+    }
+
+}
+console.log(obg);
+console.log(obg.one());
+console.log(obj.two());
+
+
+</html>
+
+let ok1 = function(w,e,r){
+
+    this.name = w;
+    this.age = e;
+    this.about = r;
+
+   
+}
+
+let a = new ok1("darshan",18,true);
+

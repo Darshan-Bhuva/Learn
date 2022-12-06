@@ -1,0 +1,24 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <button onclick="clearinterval(clock)">Click me</button>
+        <p id="ur_clock"></p>
+    </body>
+    <script>
+        let clock = setInterval(clocktimting, 1000);
+        function clocktimting() {
+            var d = new Date();
+            var dar = d.toLocaleTimeString();
+            document.getElementById('ur_clock').innerHTML = dar;
+        }
+    </script>
+
+    </html>

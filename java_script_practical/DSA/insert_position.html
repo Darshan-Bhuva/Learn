@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let arr = [32, 12, 42, 53, 46, 52, 3, 43, 1]
+    let pos = 2;
+    let new_val = 300
+    for (let i = arr.length; i >= pos; i--) {
+        arr[i] = arr[i - 1]
+    }
+    arr[pos - 1] = new_val
+    console.log(arr);
+
+</script>
+
+</html>

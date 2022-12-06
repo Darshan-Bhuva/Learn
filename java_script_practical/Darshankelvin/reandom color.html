@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600&family=Saira+Condensed:wght@100;200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* font-family: 'Exo', sans-serif; */
+            /* font-family: 'Josefin Sans', sans-serif; */
+            font-family: 'Poppins', sans-serif;
+            /* font-family: 'Quicksand', sans-serif; */
+            /* font-family: 'Saira Condensed', sans-serif; */
+            font-variant: small-caps;
+        }
+
+        body {
+            /* background-color: rgba(30, 23, 0, 0.973); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        h1 {
+            text-align: center;
+            /* line-height: 10; */
+        }
+
+        .pop {
+            text-align: center;
+            /* background-color: white; */
+            height: 180px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 6px 2px rgba(49, 48, 48, 0.733);
+            font-weight: bolder;
+            font-size: 20px;
+            display: none;
+        }
+
+        .que {
+            display: block;
+        }
+
+        .b1 {
+            height: 50px;
+            width: 100px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 20px 0.1px rgba(49, 48, 48, 0.733);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .b1:hover {
+            transform: scale(1.12);
+        }
+
+        .bu_main {
+            display: flex;
+            justify-content: space-around;
+            padding: 23px;
+        }
+
+        #button {}
+    </style>
+</head>
+
+<body>
+    <!-- <h1> Welcome! To Random Color Generator.</h1> -->
+    <div class="pop">
+        <div class="que">
+            Are you enjoying this <br> random color generetor?<br>
+            Press any key to stop
+        </div>
+        <div class="bu_main">
+            <div class="b1" id="button">Yeee</div>
+            <div class="b1" id="button">Nope</div>
+        </div>
+    </div>
+</body>
+
+<script>
+    let clear = setInterval(() => {
+        let ran1 = Math.floor((Math.random() * 255) + 1);
+        let ran2 = Math.floor((Math.random() * 255) + 1);
+        let ran3 = Math.floor((Math.random() * 255) + 1);
+        let ran4 = (Math.random() * 1).toFixed(3);
+        document.body.style.backgroundColor = `rgba(${ran1}, ${ran2}, ${ran3}, ${ran4})`;
+        let p = document.querySelector(".pop").style.backgroundColor = `rgba(${ran1}, ${ran2}, ${ran3}, ${ran4})`;
+    }, 1000);
+
+    document.querySelector(".b1").addEventListener("click", display => {
+        document.querySelector(".pop").style.display = "none";
+    })
+
+    setTimeout(() => {
+        document.querySelector(".pop").style.display = "block";
+    }, 5000);
+
+    document.body.addEventListener("keyup" , stop => {
+       let check = clearInterval(clear);
+    })
+    
+
+</script>
+
+</html>

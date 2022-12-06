@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+</body>
+<script>
+    // let complete = false;
+    // let promm = new Promise(function(resolve,reject){
+    //     if (complete) {
+    //         resolve("I am successfull")
+    //     }else{
+    //         reject("I will be successfull")
+    //     }
+    // });
+    // console.log(promm);
+    // function prom(complete) {
+    //     return new Promise(function (resolve, reject) {
+    //         console.log("Fetching data, Please wait");
+    //         setTimeout(() => {
+    //             if (complete) {
+    //                 resolve("I am successfull")
+    //             } else {
+    //                 reject("ERROR")
+    //             }
+    //         }, 1000)
+    //     });
+    // }
+    // console.log(prom(true));
+
+
+    // let hi = (a) => {
+    //     console.log(a);
+    // }
+    // let hii = (reject) => {
+    //     console.log(reject);
+    // }
+
+    //Method chianing
+    // prom(false).then(hi).catch(hii);   
+    // prom(false).then(onfulfilment);
+    // prom(false).catch(onrejection);
+
+    // console.log(prom(true).then((result) => {
+    //     console.log(result);
+    // })
+    // .catch((error) => {
+    //     console.log(error);
+    // }));
+
+    //Method chianing syntax
+    // prom(true).then((result) => {
+    //     console.log(result);
+    // })
+    // .catch((error) => {
+    //     console.log(error);
+    // });  
+
+    // function prom(a,b) {
+    //     return new Promise(function (resolve, reject) {
+    //         console.log("Fetching data, Please wait");
+    //         // let c = a/b;
+    //         setTimeout(() => {
+    //             if (a,b) {
+    //                 resolve("Your answer = ")
+    //             } else {
+    //                 reject("failed to calculate")
+    //             }
+    //         }, 100)
+    //     });
+    // }
+    // prom(5,0).then((result) => { //0
+    //     console.log(result);
+    // })
+    // .catch((error) => {
+    //     console.log(error);
+    // }); 
+
+
+    // function prom(){
+    //     return new Promise((resolve, reject) => {
+    //         console.log("Fetching data, Please wait");
+    //         setTimeout(() => {
+    //             $.get(("https://jsonplaceholder.typicode.com/posts"), dataa => {
+    //                 // console.log(dataa)
+    //                 resolve(dataa)
+    //             }).fail(err => {
+    //                 reject("404 ERROR")
+    //             })
+    //         }, 2000)
+    //     });
+    // }
+
+    // prom()
+    // .then((result) => {
+    //     console.log(result);
+    // }).catch((error) => {
+    //     console.log(error);
+    // });
+
+    //     function a (){
+        //    return new Promise(function (res,rej) {
+    //         if (true) {
+    //             res("ok");
+    //         }else{
+    //             rej();
+    //         }
+    //     })
+    // }
+
+    //     console.log(a());
+    // a().then(d1).catch(d2);
+
+    // function d1(res) {
+    //     console.log(`hello world`)
+    //     console.log(res);
+    // }
+
+    // function d2() {
+    //     console.log(`hello universe`)
+    // }
+
+    let a = new XMLHttpRequest();
+    a.onreadystatechange = function (){
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(this.responseText)
+        } 
+        else if(this.readyState == 4 && this.status == 404){
+            console.log("error 404")
+        }
+        else{
+            console.log("error")
+        }
+    }
+    a.open("GET", "https://jsonplaceholder.typicode.com/posts", true);
+    a.send();
+</script>
+
+</html>

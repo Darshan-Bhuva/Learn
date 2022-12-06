@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="element" kelvin="hello">
+        <li class="list">First</li>
+        <li class="list">Second</li>
+        <li class="list">Third</li>
+        <a href=""></a>
+    </ul>
+    <div class="d1"></div>
+    <table border="1" cellpadding="5">
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>four</td>
+        </tr>
+    </table>
+    <button value="darshan"></button>
+    <p id="p1"></p>
+    <script>
+        // const d = document.querySelectorAll('.d1')
+        // const d1 = document.getElementsByClassName('d1')
+        // console.log(d);
+        // console.log(d1);
+    </script>
+</body>
+<script>
+    //Root node
+    // console.log(document.documentElement);
+    // console.log(document.body);
+    // console.log(document.head);
+
+    //childrens
+    // console.log(document.body.children);
+    // for(node of document.body.children){
+    //     console.log(node);
+    // }
+    // console.log(document.body.firstChild);
+    // console.log(document.body.lastChild);
+    // console.log(document.body.firstElementChild);
+    // console.log(document.body.lastElementChild);
+    // const a = (Array.from(document.body.children));
+    // console.log(a);  
+
+    //Siblings
+    // const body_child_ul  = document.body.children[0];
+    // const body_child_ul1  = body_child_ul.children[0];
+    // const body_child_ul2  = body_child_ul.children[3];
+    // console.log(body_child_ul);
+    // console.log(body_child_ul1);
+    // console.log(body_child_ul2);
+    // console.log(body_child_ul2.previousElementSibling.textContent);
+
+    //Table DOM
+    // const tableTag = document.body.children[1];
+    // console.log(tableTag.rows);
+    // console.log(tableTag.rows[0].cells[0].textContent);
+    // const table = document.getElementsByTagName("table");
+    // console.log(table[0].rows[0].cells[0].textContent);
+    // console.log(document.getElementsByTagName("table")[0].style = "color:red;font-size:20px")
+
+    //ID search
+    // console.log(document.getElementById("element"));
+    // console.log(element); 
+    // const a = element.style = "background:red;";
+    // console.log(a);
+    //only work on id not on class
+    // element.style.background = "red"
+
+    // console.log(d);
+    // console.log(d1);
+
+    // console.log(element.getAttribute('kelvin'));
+    // element.setAttribute('state' , 'gujarat');
+    // console.log(element.getAttribute('state'));
+    // console.log(element.hasAttribute('state'));
+    // element.removeAttribute('state');
+    // console.log(element.attributes);
+
+    // let div1 = document.createElement('div')
+    // let text = document.createTextNode('this is created by js')
+    // div1.append(text)
+    // div1.textContent = `this is created by js`
+    // document.body.append(div1)
+
+    // element.replaceWith(text)
+    // element.remove()
+
+    // let btn = document.createElement('button');
+    // btn.textContent="press me !"
+
+    // btn.setAttribute('onclick','my()');
+    // btn.setAttribute('disable'); 
+
+    // btn.textContent="press me!"
+
+    // document.body.prepend(btn);
+
+    // function my(){
+
+    //     console.log(`ok`)
+    // }
+
+    const watch = setInterval(() => {
+
+        let date = new Date;
+        let sec = date.getSeconds();
+        p1.innerHTML = sec;
+     
+    }, 1000)
+
+
+
+</script>
+
+</html>

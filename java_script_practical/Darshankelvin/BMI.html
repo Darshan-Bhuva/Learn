@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <style>
+        #t1::-webkit-outer-spin-button,
+        #t1::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+
+
+        /* #t1{
+            -webkit-appearance: none;         
+        } */
+    </style>
+</head>
+
+<body>
+    <input type="number" name="darshan" id="t1" placeholder="Weight in kg" autocomplete="off">
+    <input type="number" name="" id="t2" placeholder="height in Feet" autocomplete="off">
+    <input type="text" name="" id="t3" value="" disabled>
+    <input type="submit" value="get BMI" onclick="cal()">
+</body>
+<script>
+    function cal() {
+        var wgt = document.querySelector("#t1").value
+        var hgt = document.querySelector("#t2").value
+        var mtr = Math.pow(hgt * 0.3048, 2);
+        var get = eval(wgt / mtr);
+        document.getElementById("t3").value = get;
+    }
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    console.log(date);
+</script>
+
+</html>

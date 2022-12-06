@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="data">Here we load data</p>
+    <button onclick="loadData()">Get</button>
+</body>
+<script>
+    function loadData(){
+        var xhttp = new XMLHttpRequest();
+        console.log(xhttp);
+        
+        xhttp.onreadystatechange = function() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) { 
+                console.log(xhttp.responseText);
+            } else if (xhttp.readyState == 4 && xhttp.status == 404) { 
+                console.log("404 File not found");
+            } 
+        }
+        xhttp.open('GET',"https://jsonplaceholder.typicode.com/users",true);
+        xhttp.send();
+    }
+
+    console.log("code start");
+
+    let are = ["vegetable","rice","water"];
+
+    let count = 0;
+    let aa = setInterval(()=>{
+        count++;
+        console.log("hello world");
+        if(count == 5){
+            clearInterval(aa)
+        }
+    },1000)    
+
+    function pro(){
+        return new Promise(function (resolve, reject){
+            if(are.includes("vegetable") && are.includes("rice") && are.includes("water")){
+                resolve("process done......")
+            }
+            else{
+                reject("failed")
+            }
+        })
+    }
+
+    pro().then((data)=>{
+        console.log(data);
+    }).catch((err)=>{
+        console.log(err);
+    })
+
+    for (let i = 0; i <= 10; i++) {
+        
+        console.log(i);
+    }
+
+
+    console.log("code end");
+</script>
+</html>
