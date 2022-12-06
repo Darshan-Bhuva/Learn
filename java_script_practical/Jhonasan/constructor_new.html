@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const person = function (firstName,birthYear) {
+        // console.log(this);
+        this.firstName = firstName;
+        this.birthYear = birthYear;
+    }
+    const darshan = new person('darshan' , 18);
+    const darshan1 = new person('darshan1' , 18);
+    const darshan2 = new person('darshan1' , 18);
+    console.log(darshan,darshan1 , darshan2);
+    console.log(darshan,darshan1 , darshan2);
+</script>
+</html>
+
+<!-- 1. New {} is created.
+2. function is called, thid = {}
+3. {} linked to prototype.
+4. function automatically return {} -->
