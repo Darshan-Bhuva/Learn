@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">
+      Make Warning Bell And Final Bell Using Javascript
+    </h1>
+    <hr />
+    <button onclick="my()">Start Btn</button>
+  </body>
+  <script>
+    function my() {
+      let count = 0;
+      let timer = setInterval(() => {
+        count++;
+        if (count == 5) {
+          console.log("TIN TIN");
+        }
+        if (count == 10) {
+          console.log("FINAL TIN TIN");
+        }
+        // switch (count) {
+        //   case 240:
+        //     console.log("TIN TIN");
+        //   break;
+        //   case 300:
+        //     console.log("FINAL TIN TIN");
+        //     clearInterval(timer);
+        //     break;
+        //   default:
+        //     console.log("default");
+        //     break;
+        // }
+      }, 1000);
+    }
+  </script>
+</html>
