@@ -18,11 +18,12 @@
       let count = 0;
       let timer = setInterval(() => {
         count++;
-        if (count == 5) {
+        if (count == 240) {
           console.log("TIN TIN");
         }
-        if (count == 10) {
+        if (count == 300) {
           console.log("FINAL TIN TIN");
+          clearInterval(timer);
         }
         // switch (count) {
         //   case 240:
