@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -101,7 +101,8 @@
 
         get = (we) => {
             console.log(we);
-            if (we.cod == 202) {
+            if (we.cod == 200) {
+                console.log(we.main.humidity);
                 p1.innerHTML = we.main.humidity + " <sup>.</sup>C";
                 p2.innerHTML = we.weather[0].main
             } else if (we.cod == 404) {
@@ -119,9 +120,9 @@
 
 </script>
 
-</html>-->
+</html>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -147,4 +148,4 @@
 
     </div>
 </body>
-</html>
+</html> -->

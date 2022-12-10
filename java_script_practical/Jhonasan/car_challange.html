@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    // console.log("darshan");
+
+    const Car = function (c_name, c_speed) {
+        this.c_name = c_name;
+        this.c_speed = c_speed;
+    }
+    const bmw = new Car("BMW", 130)
+    const Mercedes = new Car("Mercedes", 95)
+
+    bmw.__proto__.accelerate = function () {
+        if(this.c_speed == 0){
+            console.log("bhai speed vadharne kal sube panvel nikalna he");
+            return this.c_speed = 10;
+        }
+        else if (this.c_speed <= 140) {
+            this.c_speed += 10;
+            console.log(`${this.c_name} current speed is ${this.c_speed}`);
+        }else{
+            console.log("if you love your life then pressed breake and saved your life");
+        }
+    }
+
+    Mercedes.__proto__.brake = function () {
+        this.c_speed -= 5;
+        if (this.c_speed >= 0) {
+            console.log(`${this.c_name} current speed is ${this.c_speed}`);
+        }else{
+            console.log("if you not love your life then pressed accelerate and enjoy your life");
+        }
+    }
+
+    bmw.accelerate()
+    bmw.brake()
+  
+   
+    
+
+  
+</script>
+
+</html>
