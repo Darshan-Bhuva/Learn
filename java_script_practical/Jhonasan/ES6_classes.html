@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // class expression
+    // const personcl = class{}
+
+
+    // class declaraation
+    class personcl{
+        constructor(firstname,byear){
+            this.firstname = firstname;
+            this.byear = byear;
+            // console.log(this);
+        }
+
+    //Methods will be added automatical to the prototype property of the class.
+        calage(){
+            console.log(2022 - this.byear);
+        }
+
+    }
+
+    // const darshan = new personcl("darshan" , 2005)
+
+    // const Darshan = function (val) {
+    //     console.log(this);
+    //     this.val =val
+    // }
+    
+    // let a = new Darshan(1);
+    // let b = new Darshan(2);
+
+
+    // a.__proto__.ac =10;
+    // a.__proto__.bc =20;
+
+    // b.__proto__.bba = 10;
+
+    // console.log(a.val);
+    // console.log(b.val);
+
+    // console.log(a.ac);
+    // console.log(a.bc);
+
+    // console.log(a.bba);
+
+</script>
+</html>
