@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        position: relative;
+      }
+      .title {
+        text-align: center;
+      }
+      .content {
+        margin: 0 auto;
+        max-width: 90%;
+        width: 720px;
+        height: 100%;
+      }
+      main {
+        padding: 1% 0;
+        position: relative;
+        background: #f5f5f5;
+        box-shadow: 0px -10px 60px rgba(0, 0, 0, 0.25);
+      }
+      button {
+        border: 3px solid #fff;
+        background: transparent;
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 5px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        text-transform: uppercase;
+        transition: all ease-in-out 0.3s;
+      }
+      button:hover {
+        background: #fff;
+        color: #000;
+        opacity: 0.7;
+      }
+      #zoom {
+        overflow: hidden;
+        padding-bottom: 60%;
+        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/927610/pexels-photo-587409.jpeg);
+        background-size: 100% 100%;
+        background-position: top center;
+      }
+      .title {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+      }
+      .title h1 {
+        text-align: center;
+        color: #fff;
+      }
+      @media (max-width: 1024px) {
+        .content {
+          text-align: justify;
+        }
+        #zoom {
+          overflow: hidden;
+          padding-bottom: 60%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <header id="zoom">
+        <div class="title">
+          <h1>Scroll to Zoom</h1>
+          <a href="http://webdesignerwall.com/tutorials/how-to-add-icon-fonts-to-any-element-with-css" alt="webdesignerwall.com" target="_blank">
+            <button>View Tutorial</button>
+            </a>
+        </div>
+      </header>
+    </div>
+    <main role="main">
+      <div class="content">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </div>
+    </main>
+  </body>
+  <script>
+  window.addEventListener("scroll", function () {
+      let scr = window.scrollY;
+      console.log(scr);
+      let size = 100 + scr / 5 + "%";
+      // console.log(size);
+      scr > 0
+        ? zoom.setAttribute("style", `background-size:${size};`)
+        : "Error";
+    });
+  </script>
+</html>

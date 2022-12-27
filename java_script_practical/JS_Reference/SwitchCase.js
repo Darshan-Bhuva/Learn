@@ -1,7 +1,10 @@
 // RULES :-
 
 // The break statement "jumps out" of a loop and only switch case statement not if else.
+
 // The continue statement "jumps over" one iteration in the loop and only switch case statement not if else.
+
+// Switch Case Statement Only Access Arithmetic, Assignment, And Comparison Operator
 
 // Syntax of Switch Case.........
 
@@ -24,8 +27,8 @@
 
 // TASK of Switch Case.........
 
-let date = new Date()
-let day = date.getDay()
+let date = new Date();
+let day = date.getDay();
 
 switch (day) {
   case 0:
