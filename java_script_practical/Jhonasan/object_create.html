@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const personalProto = {
+        calage(){
+            console.log(2022 - this.birthy);
+        },
+    };
+     const darshan = Object.create(personalProto);
+     console.log(darshan);
+     darshan.name = "darshan"
+     darshan.birthy = 2005; 
+     darshan.calage();
+     console.log(personalProto);
+     console.log(darshan.__proto__);
+</script>
+</html>

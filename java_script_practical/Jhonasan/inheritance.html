@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // const Person = function(firstName,birthYear){
+    //     this.firstName = firstName;
+    //     this.birthYear = birthYear;
+    // }
+
+    // Person.prototype.Calculate_age = function(){
+    //     return this.birthYear - 2022;
+    // }
+
+    // const Student = function(firstName,birthYear,course){
+    //     Person.call(this,firstName,birthYear)
+    //     this.course = course;
+    // }
+
+    // Student.prototype.Student_intro = function(){
+    //     console.log(`My name is ${this.firstName} and i am ${this.Calculate_age} year old, I am studing in ${this.course} Department`);
+    // }
+
+    // const Darshan = new Student("student",2005,"IT");
+    // console.log(Darshan);
+    // Darshan.Student_intro()
+
+    class Animal {
+        constructor(name, work) {
+            this.name = name;
+            this.work = work;
+        }
+        run() {
+            console.log(this.name + " is running");
+        }
+        go() {
+            console.log(this.name + " is going to zoo");
+        }
+    }
+
+    class Monkey extends Animal{
+        eat(){
+            console.log(this.name + " is eating banana");
+        }
+    }
+
+
+    // Passed argument to the base class is not used in child class object. 
+    const obj_Animal = new Animal("Langoor" , "jumping");
+    const obj_Monkey = new Monkey("Bandar" , "bitting");
+
+    console.log(obj_Monkey);
+    console.log(obj_Animal);
+
+    obj_Animal.run()
+    obj_Animal.go()
+
+
+    
+    obj_Monkey.eat()
+    obj_Monkey.run()
+    obj_Monkey.go()
+</script>
+
+</html>
