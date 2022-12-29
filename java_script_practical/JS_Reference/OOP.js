@@ -9,7 +9,7 @@
 // 6. Prototype Of Object Is An Empty Space For Create Any Logical Task
 // 7. In OOP Inheritence extendes keyword Connect Child Class with Parent Class
 // 8. In OOP Inheritence super() keyword Connect Child Class with Parent Class key , prototype and super() Always Written Under Child Class's constructor
-// 9. In OOP Getter And Setter 
+// 9. In OOP Getter And Setter
 // 10. In OOP Encapsulation
 
 // Here Link For Online Reference https://www.freecodecamp.org/news/object-oriented-javascript-for-beginners/
@@ -106,6 +106,8 @@
 }
 
 {
+  // OOP Method 2 With Encapsulation Syntax............................
+
   class One {
     constructor(name, age) {
       this.name = name;
@@ -137,18 +139,18 @@
 }
 
 {
-// OOP Syantax Of Encapsulation
+  // OOP Syantax Of Encapsulation
 
-class One {
-  #year;
-  constructor(name, surname) {
-    this.name = name;
-    this.surname = surname;
-    this.#year = 2022;
+  class One {
+    #year;
+    constructor(name, surname) {
+      this.name = name;
+      this.surname = surname;
+      this.#year = 2022;
+    }
   }
-}
-let one = new One("hello", 18);
-console.log(one);
+  let one = new One("hello", 18);
+  console.log(one);
 }
 
 // OOP Method 1 TASK............................
