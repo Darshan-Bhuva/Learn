@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const Darshan = function () { }
+
+    const dobj = new Darshan()
+
+    Darshan.hey = function () {
+        console.log("Hello munna kaise ho😊😊");
+        console.log(this);
+    }
+    Darshan.hey();
+    // dobj.hey()
+
+    class darshan{
+        static hey(){
+            console.log("Hello munna kaise ho😊😊");
+            console.log(this);
+        }
+    }
+     
+    darshan.hey()
+
+</script>
+
+</html>

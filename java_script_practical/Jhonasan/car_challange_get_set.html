@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    class Car_speed {
+        constructor(c_name, car_sped) {
+            this.c_name = c_name;
+            this.car_speed = car_sped;
+        }
+
+        accelerate() {
+            if (this.car_speed == 0) {
+                console.log("bhai speed vadharne kal sube panvel nikalna he");
+                return this.car_speed = 10;
+            }
+            else if (this.car_speed <= 140) {
+                this.car_speed += 10;
+                console.log(`${this.c_name} current speed is ${this.car_speed} in Mile`);
+            } else {
+                console.log("if you love your life then pressed breake and saved your life");
+            }
+        }
+        
+        brake() {
+            this.car_speed -= 5;
+            if (this.car_speed >= 0) {
+                console.log(`${this.c_name} current speed is ${this.car_speed}`);
+            } else {
+                console.log("if you not love your life then pressed accelerate and enjoy your life");
+            }
+        }
+        
+        get speedUs() {
+            return this.car_speed = this.car_speed/1.6;
+        }
+    }
+
+    let obj_Car_speed = new Car_speed("Ford", 120);
+    obj_Car_speed.speedUs;
+    obj_Car_speed.accelerate()
+    obj_Car_speed.accelerate()
+
+</script>
+
+</html>

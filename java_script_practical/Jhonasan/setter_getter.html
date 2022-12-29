@@ -9,4 +9,51 @@
 <body>
     
 </body>
+<script>
+    const account = {
+        owner: 'drashna',
+        movement: [22,456,87,56,324],
+
+        latest(){
+            return this.movement.slice(-1);
+        },
+        get latest1(){
+            return this.movement.slice(-1);
+        },
+        set latest1(add){
+            this.movement.push(add)
+            console.log(this.movement); 
+        }
+    }
+    
+    console.log(account.latest());
+    console.log(account.latest1);
+    account.latest1 = 3
+    
+    class personcl{
+        constructor(fullname,byear){
+            this.fullname = fullname;
+            this.byear = byear;
+            console.log(this);
+        }
+
+        calage(){ 
+            console.log(2022 - this.byear);
+        }
+
+        set fullname(name){
+            console.log(name);
+            if(name.includes(" ")) this._fullname = name;
+            else this._fullname=name
+        }
+
+        get fullname(){
+            return this._fullname
+        }
+
+    }
+    let a = new personcl("bhuva darshan" , 18)
+    console.log(a);
+    console.log(a.fullname);
+</script>
 </html>
