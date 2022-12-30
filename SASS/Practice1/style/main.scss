@@ -1,0 +1,53 @@
+// Partials
+@import "./partial";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+// MIXIN
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+// PARAMETER
+@mixin position($r_px){
+    position: relative;
+    right:$r_px ;
+}
+
+// VARIABLE
+$color:red;
+
+
+// NESTING
+.main{
+    @include flex;
+    width: 100vw;
+    height: 50vh;
+    h1{
+        @include position(100px);
+        letter-spacing: 10px;
+        color: $color;
+        &:hover{
+            color: aqua;
+        }
+        &::before{
+            content: "Hello, ";
+        }
+    }
+    p{
+        // OPERATORS
+        font-size: 50px + 50px;
+        color: $color;
+        @include position(10px);
+    }
+}

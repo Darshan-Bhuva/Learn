@@ -1,0 +1,37 @@
+.partial h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+}
+.main h1 {
+  position: relative;
+  right: 100px;
+  letter-spacing: 10px;
+  color: red;
+}
+.main h1:hover {
+  color: aqua;
+}
+.main h1::before {
+  content: "Hello,    ";
+}
+.main p {
+  font-size: 100px;
+  color: red;
+  position: relative;
+  right: 10px;
+}/*# sourceMappingURL=main.css.map */

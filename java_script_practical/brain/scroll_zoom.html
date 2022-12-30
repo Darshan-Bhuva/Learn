@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .first {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #main {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first"></div>
+    <div id="main" onclick="find()">
+        <img src="../image/168457.jpg" id="image" alt="" srcset="">
+    </div>
+    <div class="first"></div>
+</body>
+<script>
+    window.addEventListener("scroll", () => {
+        let a = image.getBoundingClientRect().top
+        if (a >= 0 && a <=700) {
+            console.log(a);
+            let size = Math.ceil( 100 + a / 20  ) + "%";
+            image.setAttribute("style", `height:${size};width:${size}`)
+            const element = document.getElementById('main');
+            const computedStyles = getComputedStyle(element);
+            const bg_Size = String(computedStyles.getPropertyValue('background-size'));
+            if ( bg_Size >= '20.00%' && bg_Size <= '90.00%' ) {
+                console.log(bg_Size);
+            }
+        }
+    })
+</script>
+
+</html>

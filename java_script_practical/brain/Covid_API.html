@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  Sort By <br><input type="radio" name="field" id="TotalConfirmed" onchange="get('TotalConfirmed')" />TotalConfirmed
+  <br><input type="radio" name="field" id="TotalDeaths" onchange="get('TotalDeaths')" />TotalDeaths
+  <br><input type="radio" name="field" id="NewRecovered" onchange="get('NewRecovered')" />NewRecovered<br>
+  <table border="1" id="show_covid_data"></table>
+</body>
+<script>
+
+  get();
+
+  function get(Radio_name) {
+    fetch("https://api.covid19api.com/summary")
+      .then((Return_Covid_data) => {
+        return Return_Covid_data.json();
+      })
+      .then((Covid_data) => {
+        show(Covid_data);
+      });
+
+    function show(Covid_data) {
+      if (Covid_data.Message == "Caching in progress") {
+        console.log("catching...");
+      } else {
+        Total_Countries = Covid_data.Countries;
+        if(Radio_name != null){
+          selected_button = document.getElementById(Radio_name)
+          console.log(selected_button);
+          if (selected_button.checked) {
+            Total_Countries.sort((current_index, next_index) => {
+              return current_index[Radio_name] - next_index[Radio_name];
+            });
+            console.log(Radio_name);
+            console.log("sort");
+            put(Covid_data)
+          } else {
+            put(Covid_data)
+          }
+        }else{
+          put(Covid_data)
+        }
+      }
+    }
+  }
+
+  function put(Covid_data) {
+    show_covid_data.innerHTML = '';
+    show_covid_data.innerHTML += `<th>Index</th><th>Country</th><th>NewConfirmed</th><th>NewDeaths</th><th>NewRecovered</th><th>TotalConfirmed</th><th>TotalDeaths</th><th>TotalRecovered</th>`;
+    for (let i = 0; i < Total_Countries.length; i++) {
+      show_covid_data.innerHTML += `<tr><td>${i + 1}</td><td>
+                        ${Total_Countries[i].Country}</td><td>${Total_Countries[i].NewConfirmed
+        }</td><td>${Total_Countries[i].NewDeaths}</td><td>${Total_Countries[i].NewRecovered
+        }</td><td>${Total_Countries[i].TotalConfirmed}</td><td>${Total_Countries[i].TotalDeaths
+        }</td><td>${Total_Countries[i].TotalRecovered}</td></tr>`;
+    }
+  }
+</script>
+
+</html>
