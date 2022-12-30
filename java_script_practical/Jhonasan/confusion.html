@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
+    //   Student.prototype.Student_intro = function (stu_Name) {
+    //     console.log(
+    //       `My name is ${this.stu_Name} I am studing in ${this.course} Department`
+    //     );
+    //   };
+    //   const Darshan = new Student("darshan", 2005, "IT");
+    //   Darshan.__proto__.Student_intro = function (stu_Name) {
+    //     console.log(
+    //       `My name is ${this.stu_Name} I am studing in ${this.course} Department`
+    //     );
+    //   };
+    //   console.log(Darshan);
+    //   console.log(Darshan.__proto__);
+    //   console.log(Darshan.__proto__.Student_intro());
+    //   console.log(Student.prototype);
+    //   console.log(Student.prototype.Student_intro());
+    //   Darshan.Student_intro();
 
-    // // Student.prototype.Student_intro = function(stu_Name){
-    //     console.log(`My name is ${this.stu_Name} I am studing in ${this.course} Department`);
-    // }
-    
-    // const Darshan = new Student("darshan",2005,"IT");
-    // Darshan.__proto__.Student_intro = function(stu_Name){
-    //     console.log(`My name is ${this.stu_Name} I am studing in ${this.course} Department`);
-    // }
-    // console.log(Darshan);
-    // console.log(Darshan.__proto__);
-    // console.log(Darshan.__proto__.Student_intro());
-    // console.log(Student.prototype);
-    // console.log(Student.prototype.Student_intro());
-    // Darshan.Student_intro()
-        
-        // _-_--_-_-------_-_--__---_-___---___-----___-___-_---_---__--__-_-_-__--_---__-_--
-        
-        // 1.class_name.function_name if we create a function like this then we can only access that function using class_name.function_name
-        // class Kelvin{}
-        // Kelvin.hey = function(){
-            //     console.log("Hello munna kaise ho😊😊😊😊");
-            // }
-            // kobj = new Kelvin;
-            // Kelvin.hey();                A
-            // Kelvin.prototype.hey();      NA
-            // kobj.hey();                  NA
-            // kobj.__proto__.hey();        NA
-            
-            // 2. If the method is define in the class then we can access it in three ways
-            // class Kelvin{
-            //         hey(){
-            //                  console.log("Hello kelvin kaise ho😊😊😊😊");
-            //             }
-            //         }
-            // kobj = new Kelvin;         
-            // Kelvin.hey();                NA    
-            // kobj.hey();                  A  
-            // kobj.__proto__.hey();        A  
-            // Kelvin.prototype.hey()       A  
-                    
-    // 3. if we make any function in class using object of the class then we can only access it using obj_name.function_name
-    // class Kelvin {
-        // }
-        // kobj = new Kelvin;
-        // kobj.hey = function () {
-            //     console.log("Hello munna kaise ho😊😊😊😊");
-            // }
-            // kobj.hey()                   A   
-            // kobj.__proto__.hey()         NA
-            // Kelvin.prototype.hey()       NA
-            // Kelvin.hey();                NA
-</script>
-</body>
+      // _-_--_-_-------_-_--__---_-___---___-----___-___-_---_---__--__-_-_-__--_---__-_--
+
+      // 1.class_name.function_name if we create a function like this then we can only access that function using class_name.function_name
+      class Kelvinm{}
+      Kelvinm.hey = function(){
+              console.log("Hello munna kaise ho 😊😊😊😊");
+          }
+          kobj1 = new Kelvinm();
+          console.log(kobj);
+      // Kelvin.hey();                A
+      // Kelvin.prototype.hey();      NA
+      // kobj.hey();                  NA
+      // kobj.__proto__.hey();        NA
+
+      // 2. If the method is define in the class then we can access it in three ways
+      class Kelvinn{
+              hey(){
+                       console.log("Hello kelvin kaise ho😊😊😊😊");
+                  }
+              }
+      kobj2 = new Kelvinn;
+      console.log(kobj);
+    //   Kelvin.hey();                NA
+      // kobj.hey();                  A
+      // kobj.__proto__.hey();        A
+      // Kelvin.prototype.hey()       A
+
+      // 3. if we make any function in class using object of the class then we can only access it using obj_name.function_name
+      class Kelvin {
+      }
+    //   kobj3 = new Kelvin;
+      kobj.hey = function () {
+          console.log("Hello munna kaise ho😊😊😊😊");
+        }
+       console.log(kobj);
+    //   kobj.hey()                    A
+      // kobj.__proto__.hey()         NA
+      // Kelvin.prototype.hey()       NA
+      // Kelvin.hey();                NA
+    </script>
+  </body>
 </html>
