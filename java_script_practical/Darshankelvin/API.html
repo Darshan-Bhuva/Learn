@@ -88,7 +88,7 @@
 </body>
 <script>
 
-    b1.addEventListener("click", get =  () => {
+    b1.addEventListener("click", get = () => {
         const a = t1.value
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${a}&APPID=26b1cdbdcc171c93adbac559e5382de7`).then((response) => {
             return response.json();
