@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      /* body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      } */
+      #table {
+        border: 2px solid black;
+        border-radius: 20px;
+      }
+      .tRow {
+        border: 2px solid red;
+      }
+      .tData {
+        /* border: 2px solid blue; */
+        text-align: center;
+        padding: 10px;
+      }
+      .btn {
+        border-radius: 20px;
+        border: 2px solid black;
+        height: 45px;
+        width: 45px;
+        /* margin: 10px; */
+      }
+      #display {
+        border: 2px solid red;
+        margin: 40px;
+        margin-left: 10px;
+        height: 45px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="display"></p>
+    <table id="table">
+      <tr class="tRow" id="tr1">
+        <td class="tData" id="td1">
+          <button class="btn" onclick="calc(this.innerHTML)">1</button>
+        </td>
+        <td class="tData" id="td2">
+          <button class="btn" onclick="calc(this.innerHTML)">2</button>
+        </td>
+        <td class="tData" id="td3">
+          <button class="btn" onclick="calc(this.innerHTML)">3</button>
+        </td>
+        <td class="tData" id="td4">
+          <button class="btn" onclick="calc(this.innerHTML)">4</button>
+        </td>
+      </tr>
+      <tr class="tRow" id="tr2">
+        <td class="tData" id="td6">
+          <button class="btn" onclick="calc(this.innerHTML)">5</button>
+        </td>
+        <td class="tData" id="td7">
+          <button class="btn" onclick="calc(this.innerHTML)">6</button>
+        </td>
+        <td class="tData" id="td8">
+          <button class="btn" onclick="calc(this.innerHTML)">7</button>
+        </td>
+        <td class="tData" id="td9">
+          <button class="btn" onclick="calc(this.innerHTML)">8</button>
+        </td>
+      </tr>
+      <tr class="tRow" id="tr3">
+        <td colspan="2" class="tData" id="td10">
+          <button class="btn" onclick="calc(this.innerHTML)">9</button>
+        </td>
+        <td colspan="2" class="tData" id="td11">
+          <button class="btn" onclick="calc(this.innerHTML)">0</button>
+        </td>
+      </tr>
+      <tr class="tRow" id="tr4">
+        <td class="tData" id="td12">
+          <button class="btn" onclick="calc(this.innerHTML)">+</button>
+        </td>
+        <td class="tData" id="td13">
+          <button class="btn" onclick="calc(this.innerHTML)">-</button>
+        </td>
+        <td class="tData" id="td14">
+          <button class="btn" onclick="calc(this.innerHTML)">*</button>
+        </td>
+        <td class="tData" id="td15">
+          <button class="btn" onclick="calc(this.innerHTML)">/</button>
+        </td>
+      </tr>
+      <tr class="tRow" id="tr5">
+        <td colspan="2" class="tData" id="td16">
+          <button class="btn" onclick="ans()">=</button>
+        </td>
+        <td colspan="2" class="tData" id="td16">
+          <button class="btn" onclick="okclear()">Clear</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    function calc(value) {
+      let p = document.getElementById("display");
+      p.innerHTML += value;
+    }
+    function ans() {
+      let p = document.getElementById("display");
+      p.innerHTML = eval(p.innerHTML);
+    }
+    function okclear() {
+      let p = document.getElementById("display");
+      p.innerHTML = null;
+    }
+  </script>
+</html>

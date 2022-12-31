@@ -1,4 +1,36 @@
 {
+  // Array And Object Destructuring........
+
+  // Array Destructuring
+  let are = [1, "String", true];
+  let [de, struc, turing] = are;
+  console.log(de);
+  console.log(struc);
+  console.log(turing);
+
+  // Object Destructuring With Valid Syntax
+  let obj = {
+    name: "name",
+    age: 100,
+    boolean: true,
+  };
+  let { name, age, boolean } = obj;
+  console.log(name);
+  console.log(age);
+  console.log(boolean);
+
+  // Object Destructuring With Invalid Syntax
+  let newObj = {
+    newName: "name",
+    newAge: 100,
+    newBoolean: true,
+  };
+  let { Name, Age, Booleans } = newObj;
+  console.log(Name);
+  console.log(Age);
+  console.log(Booleans);
+}
+{
   // In JavaScript, there are several types of operators that can be used to perform different operations on variables and expressions. Some of the most common types of operators in JavaScript are:
 
   // 1. Arithmetic operators, such as +, -, *, /, and %, are used to perform mathematical operations on numbers.
@@ -163,4 +195,17 @@
     return x * x;
   }
   console.log(square(2)); // Output: 4
+}
+
+{
+  // new Date And Date In Js
+  // Math In Js
+  // setTimeout clearTimeout In Js
+  // setInterval clearInterval In Js
+  // DOM Methods In Js ------ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+  // BOM Methods In Js ------ https://developer.mozilla.org/en-US/docs/Web/API/Window
+  // Window Api In Js ------- https://developer.mozilla.org/en-US/docs/Web/API
+  // new Promise In Js
+  // Ajax = new XMLHttpRequest In Js
+  // Fetch In Js
 }
