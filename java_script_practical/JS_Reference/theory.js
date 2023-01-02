@@ -1,4 +1,31 @@
 {
+  // In Every Object, ObjectName.KeyValue == this.KeyValue
+  // String And String Methods
+  // Array And Array Methods, Array With Loop
+  // Do While Loop, While Loop, For Loop, For In Loop, For Of Loop
+  // If Else And Switch case Statements
+  // Math In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+  // new Date And Date In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+  // ES6 Arrow Function
+  // Hoisting ------- https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
+  // Iterators Means All Things In Js Who Have An Index Is Iterators ---- Example:- String And Array
+  // new Audio
+  // Event And addEventListner
+  // Ternary Operator (condition)? true:false
+  // Spread Operator ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+  // Rest Operator ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+  // setTimeout clearTimeout In Js
+  // setInterval clearInterval In Js
+  // DOM Methods In Js ------- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+  // BOM Methods In Js ------- https://developer.mozilla.org/en-US/docs/Web/API/Window
+  // Window Api In Js ------- https://developer.mozilla.org/en-US/docs/Web/API
+  // async And await
+  // class In OOP
+  // new Promise In Js
+  // Ajax = new XMLHttpRequest In Js
+  // Fetch In Js
+}
+{
   // Array And Object Destructuring........
 
   // Array Destructuring
@@ -61,6 +88,7 @@
   console.log(5 == 5); // Output: true
   console.log("5" == 5); // Output: true
   console.log(5 === 5); // Output: true
+  console.log("5" === 5); // Output: false
   console.log(5 != 4); // Output: true
   console.log(5 !== 4); // Output: true
   console.log(5 > 4); // Output: true
@@ -195,17 +223,4 @@
     return x * x;
   }
   console.log(square(2)); // Output: 4
-}
-
-{
-  // new Date And Date In Js
-  // Math In Js
-  // setTimeout clearTimeout In Js
-  // setInterval clearInterval In Js
-  // DOM Methods In Js ------ https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
-  // BOM Methods In Js ------ https://developer.mozilla.org/en-US/docs/Web/API/Window
-  // Window Api In Js ------- https://developer.mozilla.org/en-US/docs/Web/API
-  // new Promise In Js
-  // Ajax = new XMLHttpRequest In Js
-  // Fetch In Js
 }

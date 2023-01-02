@@ -23,15 +23,16 @@
       </tr>`;
     for (let i = 1; i <= 5; i++) {
       table.innerHTML += `<tr>
-          <td class = "cls" onclick="my(this.innerHTML)">${i}</td>
-          <td class = "cls" onclick="my(this.innerHTML)">${i + 5}</td>
-          <td class = "cls" onclick="my(this.innerHTML)">${i + 10}</td>
-          <td class = "cls" onclick="my(this.innerHTML)">${i + 15}</td>
-          <td class = "cls" onclick="my(this.innerHTML)">${i + 20}</td>
+          <td class = "cls" onclick="my(this.outerHTML)">${i}</td>
+          <td class = "cls" onclick="my(this.outerHTML)">${i + 5}</td>
+          <td class = "cls" onclick="my(this.outerHTML)">${i + 10}</td>
+          <td class = "cls" onclick="my(this.outerHTML)">${i + 15}</td>
+          <td class = "cls" onclick="my(this.outerHTML)">${i + 20}</td>
           </tr>`;
     }
     function my(values) {
-      
+      let a = values;
+      a.setAttribute("style", "color:red;");
     }
   </script>
 </html>
