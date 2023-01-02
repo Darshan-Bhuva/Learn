@@ -26,6 +26,11 @@
   // Fetch In Js
 }
 {
+  // Call Stack And Execution Context ------- https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/#:~:text=The%20Execution%20Stack%2C%20also%20known,single%20task%20at%20a%20time.
+  
+  // Execution Stack And Execution Context ------- https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/#:~:text=The%20Execution%20Stack%2C%20also%20known,single%20task%20at%20a%20time.
+}
+{
   // Array And Object Destructuring........
 
   // Array Destructuring
