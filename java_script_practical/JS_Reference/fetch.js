@@ -1,3 +1,12 @@
+{
+  // SYNTAX OF PROMISE IN JS ------- https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+  // fetch("API Link In String").then((parameter)=>{
+  //   // Here Return Promise Of Fetch's Link....
+  // }).then((parameter)=>{
+  //   // Here Your Data Will Be Fetched.....
+  // })
+}
+                    
 function data(url) {
   fetch(url)
     .then((datas) => {

@@ -61,11 +61,11 @@
     let second;
     function first(para) {
       console.log(para);
-      return second = function (pass) {
+      return (second = function (pass) {
         console.log(pass + " " + para);
-      };
+      });
     }
     let main = first("Primary Function");
-    main();
+    main("Second Function Parameter");
   }
 }
