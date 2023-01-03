@@ -1,0 +1,89 @@
+{
+    "id": 16,
+    "title": "Typenest",
+    "description": "Okay, disclaimer – I wrote this meta description for one of my clients. I’m going to toot my own horn and say this description is friendly – perfectly matching Typenest’s brand values – but also compelling. I mean, who wouldn’t want to click through to find out more?",
+    "color_code": "#82B378",
+    "icon": "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/categoryImg/55695556647297028603.Group-373.png",
+    "status": 1,
+    "created_at": "2022-09-27T15:28:43.000Z",
+    "uset_likes": 25,
+    "account_types": [
+        {
+            "id": 1,
+            "account_type": "Educational"
+        },
+        {
+            "id": 2,
+            "account_type": "Professional"
+        },
+        {
+            "id": 3,
+            "account_type": "General"
+        }
+    ],
+    "topic_list": [
+        {
+            "id": 16,
+            "name": "Picture round",
+            "description": "industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not",
+            "access": "Open",
+            "access_code": null,
+            "regional_relevance": "Global",
+            "color_code": "#485980",
+            "search_tags": "[\"as\",\"aso\"]",
+            "icon": "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/topicImg/16881768686698681454.cooperation-2.png",
+            "topic_xp": 0,
+            "game_mode": "Training",
+            "match_format": "Blitz",
+            "is_popular": 0,
+            "is_featured": 0,
+            "created_at": "2022-10-07T11:41:00.000Z",
+            "updated_at": "2022-11-28T07:18:00.000Z",
+            "all_quiz": 1864,
+            "all_que": 14,
+            "user_que": 0
+        },
+        {
+            "id": 2,
+            "name": "Generals",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "access": "Close",
+            "access_code": "ZLZ4080",
+            "regional_relevance": "Global",
+            "color_code": "#218A11",
+            "search_tags": "[\"general\"]",
+            "icon": "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/topicImg/51318693469009514593.data.svg",
+            "topic_xp": 0,
+            "game_mode": "Training",
+            "match_format": "Blitz",
+            "is_popular": 0,
+            "is_featured": 0,
+            "created_at": "2022-09-27T15:35:03.000Z",
+            "updated_at": "2022-11-10T08:14:00.000Z",
+            "all_quiz": 372,
+            "all_que": 120,
+            "user_que": 0
+        },
+        {
+            "id": 47,
+            "name": "Tigers_Long",
+            "description": "Testing long questions and answers",
+            "access": "Open",
+            "access_code": null,
+            "regional_relevance": "Global",
+            "color_code": "#C7AC4F",
+            "search_tags": "[\"tigers\",\"animals\"]",
+            "icon": "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/topicImg/80353498987119258928.number-146025.svg",
+            "topic_xp": 0,
+            "game_mode": "Training",
+            "match_format": "Classic",
+            "is_popular": 1,
+            "is_featured": 1,
+            "created_at": "2022-11-17T14:17:30.000Z",
+            "updated_at": "2022-12-30T08:36:00.000Z",
+            "all_quiz": 160,
+            "all_que": 21,
+            "user_que": 0
+        }
+    ]
+}
