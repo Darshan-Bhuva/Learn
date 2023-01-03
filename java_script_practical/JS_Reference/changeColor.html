@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .go {
+        color: green;
+      }
+      .stop {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="my_box" class="httmml">
+      <h3>Hello World</h3>
+    </div>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+
+      const oElem = document.getElementById("my_box");
+    //   console.log(oElem.outerHTML)
+    oElem.className = "add"
+    oElem.classList.add("hello")
+    console.log(oElem.getAttribute("class"))
+    // variable to store our intervalID
+    let nIntervId;
+
+    function changeColor() {
+      // check if an interval has already been set up
+      if (!nIntervId) {
+        nIntervId = setInterval(flashText, 1000);
+      }
+    }
+
+    function flashText() {
+      const oElem = document.getElementById("my_box");
+      oElem.className = oElem.className === "go" ? "stop" : "go";
+    }
+
+    function stopTextColor() {
+      clearInterval(nIntervId);
+      // release our intervalID from the variable
+      nIntervId = null;
+    }
+
+    document.getElementById("start").addEventListener("click", changeColor);
+    document.getElementById("stop").addEventListener("click", stopTextColor);
+  </script>
+</html>

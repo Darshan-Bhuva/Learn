@@ -1,4 +1,68 @@
 {
+  // In Every Object, ObjectName.KeyValue == this.KeyValue
+  // String And String Methods
+  // Array And Array Methods, Array With Loop
+  // Do While Loop, While Loop, For Loop, For In Loop, For Of Loop
+  // If Else And Switch case Statements
+  // Math In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+  // new Date And Date In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+  // ES6 Arrow Function
+  // Hoisting ------- https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
+  // Iterators Means All Things In Js Who Have An Index Is Iterators ---- Example:- String And Array
+  // new Audio
+  // Event And addEventListner
+  // Ternary Operator (condition)? true:false
+  // Spread Operator ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+  // Rest Operator ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+  // setTimeout clearTimeout In Js
+  // setInterval clearInterval In Js
+  // DOM Methods In Js ------- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+  // BOM Methods In Js ------- https://developer.mozilla.org/en-US/docs/Web/API/Window
+  // Window Api In Js ------- https://developer.mozilla.org/en-US/docs/Web/API
+  // async And await
+  // class In OOP
+  // new Promise In Js
+  // Ajax = new XMLHttpRequest In Js
+  // Fetch In Js
+}
+{
+  // Call Stack And Execution Context ------- https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/#:~:text=The%20Execution%20Stack%2C%20also%20known,single%20task%20at%20a%20time.
+  
+  // Execution Stack And Execution Context ------- https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/#:~:text=The%20Execution%20Stack%2C%20also%20known,single%20task%20at%20a%20time.
+}
+{
+  // Array And Object Destructuring........
+
+  // Array Destructuring
+  let are = [1, "String", true];
+  let [de, struc, turing] = are;
+  console.log(de);
+  console.log(struc);
+  console.log(turing);
+
+  // Object Destructuring With Valid Syntax
+  let obj = {
+    name: "name",
+    age: 100,
+    boolean: true,
+  };
+  let { name, age, boolean } = obj;
+  console.log(name);
+  console.log(age);
+  console.log(boolean);
+
+  // Object Destructuring With Invalid Syntax
+  let newObj = {
+    newName: "name",
+    newAge: 100,
+    newBoolean: true,
+  };
+  let { Name, Age, Booleans } = newObj;
+  console.log(Name);
+  console.log(Age);
+  console.log(Booleans);
+}
+{
   // In JavaScript, there are several types of operators that can be used to perform different operations on variables and expressions. Some of the most common types of operators in JavaScript are:
 
   // 1. Arithmetic operators, such as +, -, *, /, and %, are used to perform mathematical operations on numbers.
@@ -29,6 +93,7 @@
   console.log(5 == 5); // Output: true
   console.log("5" == 5); // Output: true
   console.log(5 === 5); // Output: true
+  console.log("5" === 5); // Output: false
   console.log(5 != 4); // Output: true
   console.log(5 !== 4); // Output: true
   console.log(5 > 4); // Output: true

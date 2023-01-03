@@ -31,7 +31,9 @@
 
   // MAINLY USE THIS METHOD FOR CREATE PROTOTYPE
   Method_One.prototype.add = function (parameter, forThisFunction) {
-    console.log(`hello ${parameter} ${forThisFunction}`);
+    console.log(
+      `hello ${parameter} ${forThisFunction} ${this.key_name} ${this.key_surname}`
+    );
   };
 
   // This Method Also Create Prototype But This Method Is Not Better For Create Prototype
@@ -106,7 +108,7 @@
 }
 
 {
-  // OOP Method 2 With Encapsulation Syntax............................
+  // OOP Method 2 With Inheritence Syntax............................
 
   class One {
     constructor(name, age) {

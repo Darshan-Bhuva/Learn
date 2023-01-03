@@ -34,7 +34,6 @@
 
 // 18.reverse(): reverses the order of the elements in an array
 
-const numbers = [1, 2, 3, 4, 5];
 {
   // 1. Array map Method..........
   // Array Map Method Always return Array
@@ -45,6 +44,7 @@ const numbers = [1, 2, 3, 4, 5];
   //   let store = numbers.map(function(perElement, index, wholeArray){
   //         Write Code Here
   //   })
+  const numbers = [1, 2, 3, 4, 5];
 
   let first = numbers.map((perElement, index, wholeArray) => {
     console.log(perElement);
@@ -78,6 +78,8 @@ const numbers = [1, 2, 3, 4, 5];
   //         Write Code Here
   //   })
 
+  const numbers = [1, 2, 3, 4, 5];
+
   let first = numbers.filter((perElement, index, wholeArray) => {
     console.log(perElement);
   });
@@ -109,12 +111,16 @@ const numbers = [1, 2, 3, 4, 5];
 {
   // 3. Array reduce Method..........
   // Array reduce Method return Only One Value
+  // If We Declare InitialValue Then AccumilateValue == Declared Initial Value
+  // If We Not Declare InitialValue Then AccumilateValue == Array[0] Means Array's First Value
   //   let store = numbers.reduce((accumilateValue, perElement, index, wholeArray)=>{
   //        Write Code Here
   //   },giveInitialValue)
   //   let store = numbers.reduce(function(accumilateValue, perElement, index, wholeArray){
   //         Write Code Here
   //   },giveInitialValue)
+
+  const numbers = [1, 2, 3, 4, 5];
 
   let first = numbers.reduce((acc, value, index, array) => {
     return acc + value;

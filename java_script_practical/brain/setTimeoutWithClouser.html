@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // function first() {
+    //   let i = 0;
+    //   let interval = setInterval(() => {
+    //     document.write(i + "<br>");
+    //     i = i + 1;
+    //     if (i == 10) {
+    //       clearInterval(interval);
+    //     }
+    //   }, 1000);
+    // }
+    // function second(callback) {
+    //   let j = 10;
+    //   while (j <= 11) {
+    //     let pass = callback;
+    //     pass();
+    //     j = j + 1;
+    //     document.write(j);
+    //   }
+    // }
+    // second(first);
+
+    for (let i = 0; i <= 5; i++) {
+      setTimeout(() => {
+        console.log(i);
+      }, i * 1000);
+    }
+  </script>
+</html>

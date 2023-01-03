@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" />
+    <button onclick="wait()" ,>click me</button>
+    <script>
+      const wait = () => {
+        console.log("Js Part Is Starting");
+
+        let start = new Date().getTime();
+        console.log(start);
+        console.log(new Date().getTime() - start);
+
+        while (new Date().getTime() - start < 5000) {
+          console.log(new Date().getTime());
+          // console.log("stored time " + start);
+          console.log(new Date().getTime() - start);
+          // console.log("All Right It's done.");
+        }
+      };
+    </script>
+  </body>
+</html>
