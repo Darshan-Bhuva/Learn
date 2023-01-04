@@ -1,12 +1,14 @@
 {
+  // debugger KeyWord ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger
   // In Every Object, ObjectName.KeyValue == this.KeyValue
   // String And String Methods
   // Array And Array Methods, Array With Loop
+  // Object And Object Methods ------- https://www.freecodecamp.org/news/how-to-iterate-over-objects-in-javascript/
   // Do While Loop, While Loop, For Loop, For In Loop, For Of Loop
-  // If Else And Switch case Statements
+  // If Else And Switch Case Statements
   // Math In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
   // new Date And Date In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-  // ES6 Arrow Function
+  // ES6 Arrow Function And Call Back , Clouser , IIFE Function
   // Hoisting ------- https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
   // Iterators Means All Things In Js Who Have An Index Is Iterators ---- Example:- String And Array
   // new Audio
@@ -19,15 +21,15 @@
   // DOM Methods In Js ------- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
   // BOM Methods In Js ------- https://developer.mozilla.org/en-US/docs/Web/API/Window
   // Window Api In Js ------- https://developer.mozilla.org/en-US/docs/Web/API
-  // async And await
-  // class In OOP
-  // new Promise In Js
+  // async And await ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function#:~:text=Use%20of%20async%20and%20await,you%20will%20get%20a%20SyntaxError%20.
+  // class In OOP ------- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming
+  // new Promise In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
   // Ajax = new XMLHttpRequest In Js
-  // Fetch In Js
+  // JSON Method In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
+  // Fetch In Js ------- https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 }
 {
   // Call Stack And Execution Context ------- https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/#:~:text=The%20Execution%20Stack%2C%20also%20known,single%20task%20at%20a%20time.
-  
   // Execution Stack And Execution Context ------- https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/#:~:text=The%20Execution%20Stack%2C%20also%20known,single%20task%20at%20a%20time.
 }
 {

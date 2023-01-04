@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" name="" id="search" />
+    <button onclick="find()">Find</button>
+  </body>
+  <script>
+    let jsonData = [
+      {
+        id: 16,
+        title: "Typenest",
+        description:
+          "Okay, disclaimer – I wrote this meta description for one of my clients. I’m going to toot my own horn and say this description is friendly – perfectly matching Typenest’s brand values – but also compelling. I mean, who wouldn’t want to click through to find out more?",
+        color_code: "#82B378",
+        icon: "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/categoryImg/55695556647297028603.Group-373.png",
+        status: 1,
+        created_at: "2022-09-27T15:28:43.000Z",
+        uset_likes: 25,
+        account_types: [
+          {
+            id: 1,
+            account_type: "Educational",
+          },
+          {
+            id: 2,
+            account_type: "Professional",
+          },
+          {
+            id: 3,
+            account_type: "General",
+          },
+        ],
+        topic_list: [
+          {
+            id: 16,
+            name: "Picture round",
+            description:
+              "industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not",
+            access: "Open",
+            access_code: null,
+            regional_relevance: "Global",
+            color_code: "#485980",
+            search_tags: '["as","aso"]',
+            icon: "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/topicImg/16881768686698681454.cooperation-2.png",
+            topic_xp: 0,
+            game_mode: "Training",
+            match_format: "Blitz",
+            is_popular: 0,
+            is_featured: 0,
+            created_at: "2022-10-07T11:41:00.000Z",
+            updated_at: "2022-11-28T07:18:00.000Z",
+            all_quiz: 1864,
+            all_que: 14,
+            user_que: 0,
+          },
+          {
+            id: 2,
+            name: "Generals",
+            description:
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            access: "Close",
+            access_code: "ZLZ4080",
+            regional_relevance: "Global",
+            color_code: "#218a11",
+            search_tags: '["general"]',
+            icon: "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/topicImg/51318693469009514593.data.svg",
+            topic_xp: 0,
+            game_mode: "Training",
+            match_format: "Blitz",
+            is_popular: 0,
+            is_featured: 0,
+            created_at: "2022-09-27T15:35:03.000Z",
+            updated_at: "2022-11-10T08:14:00.000Z",
+            all_quiz: 372,
+            all_que: 120,
+            user_que: 0,
+          },
+          {
+            id: 47,
+            name: "Tigers_Long",
+            description: "Testing long questions and answers",
+            access: "Open",
+            access_code: null,
+            regional_relevance: "Global",
+            color_code: "#c7ac4f",
+            search_tags: '["tigers","animals"]',
+            icon: "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/topicImg/80353498987119258928.number-146025.svg",
+            topic_xp: 0,
+            game_mode: "Training",
+            match_format: "Classic",
+            is_popular: 1,
+            is_featured: 1,
+            created_at: "2022-11-17T14:17:30.000Z",
+            updated_at: "2022-12-30T08:36:00.000Z",
+            all_quiz: 160,
+            all_que: 21,
+            user_que: 0,
+          },
+        ],
+      },
+      {
+        id: 14,
+        title: "Uber",
+        description:
+          "For a 'company' that is basically a taxi service, Uber manages to slip in some aspirational words, explain what it offers to drivers, and what it offers to riders, all in 160 characters.",
+        color_code: "#FFC727",
+        icon: "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/categoryImg/18113501059314635393.Group-386.png",
+        status: 1,
+        created_at: "2022-09-27T15:28:43.000Z",
+        uset_likes: 20,
+        account_types: [
+          {
+            id: 1,
+            account_type: "Educational",
+          },
+          {
+            id: 2,
+            account_type: "Professional",
+          },
+          {
+            id: 3,
+            account_type: "General",
+          },
+        ],
+        topic_list: [
+          {
+            id: 2,
+            name: "Generals",
+            description:
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            access: "Close",
+            access_code: "ZLZ4080",
+            regional_relevance: "Global",
+            color_code: "#218a11",
+            search_tags: '["general"]',
+            icon: "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/topicImg/51318693469009514593.data.svg",
+            topic_xp: 0,
+            game_mode: "Training",
+            match_format: "Blitz",
+            is_popular: 0,
+            is_featured: 0,
+            created_at: "2022-09-27T15:35:03.000Z",
+            updated_at: "2022-11-10T08:14:00.000Z",
+            all_quiz: 372,
+            all_que: 120,
+            user_que: 0,
+          },
+          {
+            id: 3,
+            name: "Blockchain and crypto",
+            description:
+              "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            access: "Open",
+            access_code: null,
+            regional_relevance: "Global",
+            color_code: "#c85c5c",
+            search_tags: '["crypto"]',
+            icon: "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/topicImg/88081293093283805346.running-1.png",
+            topic_xp: 0,
+            game_mode: "Training",
+            match_format: "Classic",
+            is_popular: 0,
+            is_featured: 0,
+            created_at: "2022-09-27T15:40:15.000Z",
+            updated_at: "2022-11-28T07:18:00.000Z",
+            all_quiz: 111,
+            all_que: 8,
+            user_que: 0,
+          },
+        ],
+      },
+      {
+        id: 15,
+        title: "Fitbit",
+        description:
+          "This 148-character description leaves no room for confusion about what you are going to find on the Fitbit blog. The company goes with the pure informative approach – nothing clickbaity or pushy. There’s also a call to action inviting people to follow Fitbit’s content.",
+        color_code: "#407BFF",
+        icon: "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/categoryImg/59053625707990262851.Group-375.png",
+        status: 1,
+        created_at: "2022-09-27T15:28:43.000Z",
+        uset_likes: 18,
+        account_types: [
+          {
+            id: 1,
+            account_type: "Educational",
+          },
+          {
+            id: 2,
+            account_type: "Professional",
+          },
+          {
+            id: 3,
+            account_type: "General",
+          },
+        ],
+        topic_list: [
+          {
+            id: 16,
+            name: "Picture round",
+            description:
+              "industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not",
+            access: "Open",
+            access_code: null,
+            regional_relevance: "Global",
+            color_code: "#485980",
+            search_tags: '["as","aso"]',
+            icon: "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/topicImg/16881768686698681454.cooperation-2.png",
+            topic_xp: 0,
+            game_mode: "Training",
+            match_format: "Blitz",
+            is_popular: 0,
+            is_featured: 0,
+            created_at: "2022-10-07T11:41:00.000Z",
+            updated_at: "2022-11-28T07:18:00.000Z",
+            all_quiz: 1864,
+            all_que: 14,
+            user_que: 0,
+          },
+          {
+            id: 3,
+            name: "Blockchain and crypto",
+            description:
+              "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            access: "Open",
+            access_code: null,
+            regional_relevance: "Global",
+            color_code: "#c85c5c",
+            search_tags: '["crypto"]',
+            icon: "https://zleetz-assets.s3.eu-north-1.amazonaws.com/content/topicImg/88081293093283805346.running-1.png",
+            topic_xp: 0,
+            game_mode: "Training",
+            match_format: "Classic",
+            is_popular: 0,
+            is_featured: 0,
+            created_at: "2022-09-27T15:40:15.000...",
+          },
+        ],
+      },
+    ];
+
+    function find() {
+      console.log(search.value);
+      let sort = jsonData.map((perElement, index, arr) => {
+        console.log(perElement);
+        let topicList = perElement.topic_list;
+        console.log(topicList);
+        let subSort = topicList.map((element, ind, are) => {
+          console.log(element);
+          let name = element.name;
+          console.log(name);
+        });
+      });
+    }
+  </script>
+</html>
