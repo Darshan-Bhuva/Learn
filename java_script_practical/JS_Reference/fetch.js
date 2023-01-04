@@ -6,7 +6,37 @@
   //   // Here Your Data Will Be Fetched.....
   // })
 }
-                    
+
+{
+  // Wrong Way Of Fetch Method :- First Promise Fulfilled And Also Return Second Promise But Second Promise Reject Or First Promise Prototype Shows Those Fetch Data
+  let storeFetch = fetch("https://api.covid19api.com/summary");
+  console.log(storeFetch);
+  storeFetch.then((response) => {
+    console.log(response);
+    console.log(Response.prototype);
+    console.log(response.__proto__);
+    let a = response.json(); // Here Declare Second Promise Of Fetch, Second Promise Rejected For This Reason
+    console.log(a);
+  });
+}
+
+{
+  // Right Way Of Fetch Method :- First Promise Fulfilled And Return Second Promise, And Second Promise Also Fulfilled
+
+  let storeFetch = fetch("https://api.covid19api.com/summary");
+  console.log(storeFetch);
+  storeFetch
+    .then((response) => {
+      console.log(response);
+      console.log(Response.prototype);
+      console.log(response.__proto__);
+      return response.json(); // Here Declare Second Promise in Fetch, Second Promise Fulfilled For This Reason
+    })
+    .then((fetchedData) => {
+      console.log(fetchedData);
+    });
+}
+
 function data(url) {
   fetch(url)
     .then((datas) => {

@@ -5,10 +5,10 @@
   // Array And Array Methods, Array With Loop
   // Object And Object Methods ------- https://www.freecodecamp.org/news/how-to-iterate-over-objects-in-javascript/
   // Do While Loop, While Loop, For Loop, For In Loop, For Of Loop
-  // If Else And Switch case Statements
+  // If Else And Switch Case Statements
   // Math In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
   // new Date And Date In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-  // ES6 Arrow Function
+  // ES6 Arrow Function And Call Back , Clouser , IIFE Function
   // Hoisting ------- https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
   // Iterators Means All Things In Js Who Have An Index Is Iterators ---- Example:- String And Array
   // new Audio
