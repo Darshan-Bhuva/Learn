@@ -44,7 +44,7 @@
 const fs = require("fs");
 
 // 1. Create A Folder Named It crudFolder.......
-// Creating Folder Using .mkdir()
+// Creating Folder Using .mkdirSync()
 const folderName = "crudFolder";
 if (!fs.existsSync(folderName)) {
   fs.mkdirSync(folderName);

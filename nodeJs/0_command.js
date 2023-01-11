@@ -48,11 +48,104 @@
 // 48. top - View active processes live with their system usage
 // 49. useradd and usermod - Add new user or change existing users data
 // 50. passwd - Create or update passwords for existing users
+{
+  // Basic Theroies Of Node.Js Starting.......
+  // cd ./Enter Your Path For Access Any Folder Which We Want....
+  // cd .. [Wite In Terminal, This cd Command Back From Current Folder]
+  // anyCommandName --help [Shows All The Information Of Those Command]
+  // dictionary == Folder Name
+  // Windows and Linux have commands with the same name as well
+  // How To Run Program Of node.js In terminal :- Write node 'Enter File Name, Which You Want To Run'
+  // type nul > "Enter File Name For Create New File Using Command"
+  // The REPL Feature Of Node Is Very Useful In Experimenting With Node.js Codes And To Debug JavaScript Codes.
+  // How To Trun On REPL Mode In Node.js.... ANSWER :- In Vs Code Terminal Or Any Other Terminal Write 'node'
+  // Turn On REPL MODE And Press "Tab Key" Twice, For Reason See All The Properties And Methods Of Node.js
+  // Turn On REPL MODE And Write 'fs', For Reason See All The COMMANDS And Methods Of Node.js
+  // Use Of REPL ------- {In Terminal Of Vs Code Or Any Other Terminal}
+  // 1. Js Expression
+  // 2. Use Variables
+  // 3. Multiline Code
+  // 4. Use (_) To Get The Last Result
+  // 5. We Can Use Editor Mode
+  // cd ./Enter Your Path For Access Any Folder Which We Want....
+  // cd .. [Wite In Terminal, This cd Command Back From Current Folder]
+  // \n For Next Line
+  // "utf8" Use For Encoding....
+}
 
 {
-  // Show Any Module File Or Package File Details......
+  // require("Enter Any Modules Packages Name, Which You Want To Access...") ------- Use For Accessing Any Modules Or Packages
+  // "fs" Is Stand For File System
+  // "fs" Is Package[ Module].....
+  // Here Theory Of "fs" ------- https://nodejs.org/api/fs.html
   const fs = require("fs");
   console.log(fs);
-  const check = fs.existsSync("crudFolder");
-  console.log(check);
+  console.log(fs.constants);
+
+  // "fs" With Synchronously.....
+
+  // TASK 1. require("ModuleName"); Inbuilt KeyWord For Access Any Module File
+
+  // TASK 2. .mkdirSync("Folder Name") Create Folder[ Means Dictionary]
+
+  // TASK 3. .writeFileSync("FileName.Extension", "Add Data In File")
+
+  // TASK 4. .appendFileSync("FileName.Extension","Add New Data For Append")
+
+  // TASK 5. .readFileSync("FileName.Extension") [Provide Buffer Data In Binary] [Use .toString() For Convert Buffer Bnary Data Into String Data For Read In console.log()]
+
+  // TASK 6. .readFileSync("FileName.Extension", "utf8") [Provide Buffer Binary Data Into String Using "utf8"]
+
+  // TASK 7. renameSync("OLD FileName.Extension", "NEW FileName.Extension")
+
+  // TASK 8. unlinkSync("FileName.Extension") [Delete File And Also Delete File According Their Given Path]
+
+  // TASK 9. rmdirSync("FolderName") [Delete Folder And Also Delete Folder According Their Given Path]
+
+  // TASK 10. existsSync("Any Dictionary Name") [Return True False Value, Checking Folder[Dictionary] Existance In Current Folder[Dictionary] Or Given Path Folder[Dictionary] ]
+
+  // "fs" With Asynchronously.....
+
+  // ASYNCHRONOUS CORE MODULES.......
+  // IN ASYNCHRONOUS CORE MODULES HAS ALWAYS CALLBACK FUNCTION [ Means Function call with parameter, Arror Function]
+
+  // TASK 1. require("ModuleName"); Inbuilt KeyWord For Access Any Module File
+
+  // TASK 2. .mkdir("Folder Name") Create Folder[ Means Dictionary]
+
+  // TASK 3. .writeFile("FileName.Extension", "Add Data In File", (error)=>{console.log(error)})
+
+  // TASK 4. .appendFile("FileName.Extension","Add New Data For Append", (error)=>{console.log(error)})
+
+  // TASK 5. .access("Any Dictionary Name", fs.constants ,(error)=>{console.log(error)}) [Return True False Value, Checking Folder[Dictionary] Existance In Current Folder[Dictionary] Or Given Path Folder[Dictionary] ]
+
+  // TASK 6. .readFile("FileName.Extension", "utf8", (error, data)=>{}) [Provide Buffer Binary Data Into String Using "utf8"]
+
+  // TASK 7. rename("OLD FileName.Extension", "NEW FileName.Extension", (error)=>{console.log(error)})
+
+  // TASK 8. unlink("FileName.Extension", (error)=>{console.log(error)}) [Delete File And Also Delete File According Their Given Path]
+
+  // TASK 9. rmdir("FolderName") [Delete Folder And Also Delete Folder According Their Given Path]
+
+  // TASK 10. exists("Any Dictionary Name", (error)=>{console.log(error)}) [Return True False Value, Checking Folder[Dictionary] Existance In Current Folder[Dictionary] Or Given Path Folder[Dictionary] ]------- Not Working.....
+}
+
+{
+  // require("Enter Any Modules Packages Name, Which You Want To Access...") ------- Use For Accessing Any Modules Or Packages
+  // "os" Is Stand For Operating System
+  // "os" Is Package[ Module].....
+  // Here Theory Of "os" ------- https://nodejs.org/api/os.html
+  const os = require("os");
+  console.log(os);
+  console.log(os.freemem());
+  console.log(os.arch());
+  console.log(os.platform());
+}
+{
+  // require("Enter Any Modules Packages Name, Which You Want To Access...") ------- Use For Accessing Any Modules Or Packages
+  // "path" Is Package [ Module]
+  // Here Theory Of "path" ------- https://nodejs.org/api/path.html
+
+  const path = require("path");
+  console.log(path);
 }

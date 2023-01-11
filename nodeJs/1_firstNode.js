@@ -6,6 +6,8 @@
 
 // dictionary == Folder Name
 
+// Windows and Linux have commands with the same name as well
+
 // How To Run Program Of node.js In terminal :- Write node 'Enter File Name, Which You Want To Run'
 
 // type nul > "Enter File Name For Create New File Using Command"
