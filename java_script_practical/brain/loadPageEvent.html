@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      #body {
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+      }
+      #bchild {
+        background-color: rgb(255, 0, 0);
+      }
+      #para {
+        color: azure;
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+      #ichild {
+        background-color: azure;
+      }
+      #ipara {
+        color: rgb(255, 0, 0);
+        font-weight: bolder;
+        font-size: xx-large;
+      }
+      #id {
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="body">
+      <div id="bchild">
+        <p id="para">
+          LOADING FINISHED..... LOADING FINISHED..... LOADING FINISHED.....
+          LOADING FINISHED..... LOADING FINISHED..... LOADING FINISHED.....
+          LOADING FINISHED..... LOADING FINISHED..... LOADING FINISHED.....
+          LOADING FINISHED..... LOADING FINISHED.....
+        </p>
+      </div>
+    </div>
+
+    <div id="id">
+      <div id="ichild">
+        <p id="ipara">
+          LOADING... LOADING... LOADING... LOADING... LOADING... LOADING...
+          LOADING... LOADING... LOADING... LOADING... LOADING...
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.addEventListener("load", function () {
+      // show the loading page
+      document.getElementById("id").style.display = "block";
+
+      // hide the main content
+      document.getElementById("body").style.display = "none";
+      console.log("show the loading page, hide the main content");
+    });
+
+    window.addEventListener("load", function () {
+      setTimeout(() => {
+        // hide the loading page
+        document.getElementById("id").style.display = "none";
+
+        // show the main content
+        document.getElementById("body").style.display = "block";
+
+        console.log("hide the loading page, show the main content");
+      }, 2000);
+    });
+
+    // setTimeout(() => {
+    //   window.addEventListener("load", function () {
+    //     // hide the loading page
+    //     document.getElementById("id").style.display = "none";
+
+    //     // show the main content
+    //     document.getElementById("body").style.display = "block";
+
+    //     console.log("hide the loading page, show the main content");
+    //   });
+    // }, 2000);
+  </script>
+  <!-- {
+    function first(para) {
+      console.log(para);
+    }
+    setTimeout(() => {
+      first("pass parameter");
+    }, 2000);
+
+    function second(para) {
+      setTimeout(() => {
+        console.log(para);
+      }, 2000);
+    }
+    second("pass any parameter");
+
+    setTimeout(() => {
+      function third(para) {
+        console.log(para);
+      }
+    }, 2000);
+    third("pass any any parameter");
+  } -->
+</html>

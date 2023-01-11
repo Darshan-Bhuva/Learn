@@ -36,7 +36,9 @@
 
 {
   // 1. Array map Method..........
+
   // Array Map Method Always return Array
+  
   //   let store = numbers.map((perElement, index, wholeArray)=>{
   //        Write Code Here
   //   })
@@ -110,12 +112,17 @@
 
 {
   // 3. Array reduce Method..........
+
   // Array reduce Method return Only One Value
+
   // If We Declare InitialValue Then AccumilateValue == Declared Initial Value
+
   // If We Not Declare InitialValue Then AccumilateValue == Array[0] Means Array's First Value
+
   //   let store = numbers.reduce((accumilateValue, perElement, index, wholeArray)=>{
   //        Write Code Here
   //   },giveInitialValue)
+
   //   let store = numbers.reduce(function(accumilateValue, perElement, index, wholeArray){
   //         Write Code Here
   //   },giveInitialValue)

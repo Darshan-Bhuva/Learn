@@ -1,3 +1,4 @@
+// async And await ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function#:~:text=Use%20of%20async%20and%20await,you%20will%20get%20a%20SyntaxError%20.
 // Here async Declare new Promise
 // Here await Declare fulfilled(resolve) Promise callBack Means .then()
 {
@@ -7,9 +8,17 @@
     console.log(store);
     let response = await store.json();
     console.log(response);
+    let newurl = `${url}/2`;
+    let a = await fetch(newurl)
+    let b = await a.json()
+    console.log(b);
   }
   my(url);
 }
+async function my (){
+
+}
+console.log(my());
 {
   let url = `https://jsonplaceholder.typicode.com/posts`;
   function my(url) {
@@ -41,22 +50,3 @@
 //   });
 // }
 // console.log(fetch(`https://jsonplaceholder.typicode.com/posts`));
-
-{
-  function f() {
-    console.log("maulik");
-  }
-  function s(f) {
-    console.log("pokiya");
-    f();
-  }
-  function t(s) {
-    console.log("hello");
-    s(f);
-  }
-  function four(t) {
-    console.log("world");
-    t(s);
-  }
-  four(t);
-}

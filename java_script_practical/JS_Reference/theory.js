@@ -1,18 +1,23 @@
 {
+  // Javascript Always Written In camelCase, camelCase Example {helloWorld}
+  // try And catch (Error Handling) ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
   // debugger KeyWord ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger
-  // In Every Object, ObjectName.KeyValue == this.KeyValue
+  // In Every Object, ObjectName.KeyValue == this.KeyValue, this Represent ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
   // String And String Methods
-  // Array And Array Methods, Array With Loop
+  // Array And Array Methods, Array With Loop ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
   // Object And Object Methods ------- https://www.freecodecamp.org/news/how-to-iterate-over-objects-in-javascript/
   // Do While Loop, While Loop, For Loop, For In Loop, For Of Loop
   // If Else And Switch Case Statements
   // Math In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
   // new Date And Date In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
-  // ES6 Arrow Function And Call Back , Clouser , IIFE Function
+  // ES6 Arrow Function And Call Back , Clouser , IIFE Function, call (), apply(), bind()
   // Hoisting ------- https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
   // Iterators Means All Things In Js Who Have An Index Is Iterators ---- Example:- String And Array
   // new Audio
-  // Event And addEventListner
+  // eval()
+  // window.print(), window.open(), window.close()
+  // Event ------- https://developer.mozilla.org/en-US/docs/Web/Events
+  // addEventListner ------- https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
   // Ternary Operator (condition)? true:false
   // Spread Operator ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
   // Rest Operator ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
@@ -21,8 +26,8 @@
   // DOM Methods In Js ------- https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
   // BOM Methods In Js ------- https://developer.mozilla.org/en-US/docs/Web/API/Window
   // Window Api In Js ------- https://developer.mozilla.org/en-US/docs/Web/API
-  // async And await ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function#:~:text=Use%20of%20async%20and%20await,you%20will%20get%20a%20SyntaxError%20.
   // class In OOP ------- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming
+  // async And await ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function#:~:text=Use%20of%20async%20and%20await,you%20will%20get%20a%20SyntaxError%20.
   // new Promise In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
   // Ajax = new XMLHttpRequest In Js
   // JSON Method In Js ------- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
@@ -82,7 +87,7 @@
   console.log(8 - 2); // Output: 6
   console.log(4 * 5); // Output: 20
   console.log(10 / 5); // Output: 2
-  console.log(10 % 3); // Output: 1
+  console.log(10 % 3); // Output: 1 // 10 / 3 = 3 And Reminder 1 That's Reason Output: 1 Because % sign Means Reminder
 
   // Assignment operators
   var x = 5;
@@ -188,7 +193,7 @@
   // 2. Local scope refers to variables and functions that are defined inside a function and are only available to be accessed and used within that function.
   // Global variable
 
-  var name = "John Doe";
+  var name = "John Doe"; // Global Varriable
 
   function greet() {
     // Local variable
